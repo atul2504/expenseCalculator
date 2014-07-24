@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/txtHeaderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="@string/settings_item_Grouping"
+            android:textColor="@color/color_black_87"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/grpGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/radioWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/group_week"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/group_month"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/group_year"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/btn_save"
+            android:textColor="@drawable/selector_btn_text_color_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

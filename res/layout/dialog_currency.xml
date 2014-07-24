@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/txtHeaderSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="@string/settings_item_currency"
+            android:textColor="@color/color_black_87"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/grpCurrency1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/radioRupee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_ruppee"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioDollar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_dollar"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioEuro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_euro"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/grpCurrency2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/radioYen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_yen"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioPound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_pound"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioYuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/cur_yuan"
+                android:textColor="@color/color_black_87" >
+            </RadioButton>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/cur_custom_hint"
+                android:textColor="@color/color_black_54"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:inputType="none"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/color_black_87"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:padding="15dp"
+                android:text="@string/btn_cancel"
+                android:textColor="@drawable/selector_btn_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="15dp"
+                android:text="@string/btn_ok"
+                android:textColor="@drawable/selector_btn_text_color_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

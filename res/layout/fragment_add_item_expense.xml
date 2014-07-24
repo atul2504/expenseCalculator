@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtItem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:hint="@string/hint_item"
+                android:nextFocusDown="@+id/edtPrice"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_black_87"
+                android:textColorHint="@color/color_black_54" />
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:hint="@string/hint_price"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="@color/color_black_87"
+                android:textColorHint="@color/color_black_54" />
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:padding="5dp"
+                android:prompt="@string/prompt_spinner" />
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:hint="@string/hint_description"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_black_87"
+                android:textColorHint="@color/color_black_54" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/card"
+                android:text="@string/btn_reset"
+                android:textColor="@drawable/selector_btn_text_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/card"
+                android:text="@string/btn_save"
+                android:textColor="@drawable/selector_btn_text_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

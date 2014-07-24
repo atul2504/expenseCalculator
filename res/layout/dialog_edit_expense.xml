@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dark_blue"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edtItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_item"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/rupee_symbol"
+        android:ems="8"
+        android:hint="@string/hint_price"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/spnCategory"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtDescription"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:hint="@string/hint_description"
+        android:imeOptions="actionDone"       
+        android:padding="10dp"
+        android:singleLine="true" />
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"                
+                android:layout_weight="1"
+                android:background="@color/color_dark_blue"                
+                android:text="@string/btn_save"
+                android:textColor="@drawable/selector_btn_text_color"
+                android:textSize="20sp" />
+            
+            <View
+                android:layout_width="2dp"
+                android:layout_height="wrap_content" 
+                android:background="@color/color_white"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"                
+                android:layout_weight="1"
+                android:background="@color/color_dark_blue"                
+                android:text="@string/btn_save"
+                android:textColor="@drawable/selector_btn_text_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+</LinearLayout>
